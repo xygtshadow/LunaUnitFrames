@@ -1623,7 +1623,6 @@ function HealComm:CastSpell(spellId, spellbookTabNum)
 	
 	if self.failed or (self.CurrentSpellName and not SpellIsTargeting()) then
 		self.failed = nil
-		return
 	end
 	
 	local spellName, rank = GetSpellName(spellId, spellbookTabNum)
